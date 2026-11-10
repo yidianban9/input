@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <rect width="64" height="64" rx="8" fill="#c19a45"/>
+  <rect x="7" y="7" width="50" height="50" fill="none" stroke="#16130f" stroke-width="1.5" opacity=".55"/>
+  <text x="32" y="45" text-anchor="middle" font-family="Noto Serif SC, Songti SC, SimSun, serif" font-size="36" font-weight="700" fill="#16130f">蜀</text>
+</svg>

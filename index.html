@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#16130f">
+  <meta name="description" content="蜀韵·成都——雪山下的公园城市，烟火里的幸福成都。发现成都美食、景点、文化与旅行攻略。">
+  <title>蜀韵·成都｜成都文化旅游宣传网站</title>
+
+  <!-- 站点图标与首屏主图预加载 -->
+  <link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="assets/images/banner-city.jpg" as="image">
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- 提前标记 JS 可用，避免滚动动效闪烁 -->
+  <script>document.documentElement.classList.add("js");</script>
+  <script src="js/main.js" defer></script>
+</head>
+
+<body class="page page--home">
+  <a class="skip-link" href="#main">跳至主要内容</a>
+
+  <!-- ==================== 页头：Logo + 主导航 ==================== -->
+  <header class="site-header" data-header>
+    <div class="container header__inner">
+      <a class="brand" href="index.html" aria-label="蜀韵·成都 首页">
+        <span class="brand__seal" aria-hidden="true">蜀</span>
+        <span class="brand__text">
+          <strong>蜀韵·成都</strong>
+          <small>SHUYUN CHENGDU</small>
+        </span>
+      </a>
+
+      <nav class="main-nav" aria-label="主导航">
+        <a class="nav-link is-active" href="index.html" aria-current="page"><span>01</span>首页</a>
+        <a class="nav-link" href="food.html"><span>02</span>美食</a>
+        <a class="nav-link" href="sights.html"><span>03</span>景点</a>
+        <a class="nav-link" href="culture.html"><span>04</span>文化</a>
+        <a class="nav-link" href="travel.html"><span>05</span>攻略</a>
+      </nav>
+
+      <div class="header__actions">
+        <a class="header__plan" href="travel.html">规划行程 <span aria-hidden="true">↗</span></a>
+        <button class="nav-toggle" type="button" aria-label="打开菜单" aria-expanded="false" aria-controls="mobileMenu" data-nav-toggle>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ==================== 移动端全屏导航 ==================== -->
+  <div class="mobile-menu" id="mobileMenu" data-mobile-menu aria-hidden="true">
+    <div class="mobile-menu__inner">
+      <p class="mobile-menu__kicker">MENU · 蜀韵成都</p>
+      <nav class="mobile-menu__nav" aria-label="移动端导航">
+        <a class="mobile-menu__link is-active" href="index.html"><span>01</span><strong>首页</strong><em>Home</em></a>
+        <a class="mobile-menu__link" href="food.html"><span>02</span><strong>美食</strong><em>Food</em></a>
+        <a class="mobile-menu__link" href="sights.html"><span>03</span><strong>景点</strong><em>Sights</em></a>
+        <a class="mobile-menu__link" href="culture.html"><span>04</span><strong>文化</strong><em>Culture</em></a>
+        <a class="mobile-menu__link" href="travel.html"><span>05</span><strong>攻略</strong><em>Travel</em></a>
+      </nav>
+      <div class="mobile-menu__foot">
+        <p>雪山下的公园城市<br>烟火里的幸福成都</p>
+        <a class="text-link text-link--gold" href="travel.html">开始规划旅程 <span>→</span></a>
+      </div>
+    </div>
+  </div>
+
+  <main id="main">
+    <!-- ==================== 首页：全屏轮播 Banner ==================== -->
+    <section class="hero" data-carousel aria-label="成都城市风光轮播">
+      <div class="hero__slides">
+
+        <!-- 第一张：雪山与城市 -->
+        <article class="hero-slide hero-slide--city is-active" data-slide data-caption="雪山下的公园城市" aria-hidden="false">
+          <div class="hero-slide__bg" role="img" aria-label="雪山映照下的成都城市天际线"></div>
+          <div class="hero-slide__veil"></div>
+          <div class="container hero__content">
+            <p class="eyebrow eyebrow--light"><span class="eyebrow__line"></span>天府之国 · 公园城市</p>
+            <h1 class="hero__title">雪山下的<br><em>公园城市</em></h1>
+            <p class="hero__desc">当五千米雪峰出现在天际线尽头，成都把河流、公园与街巷，写成一首舒展的城市长诗。</p>
+            <div class="hero__actions">
+              <a class="btn btn--gold" href="#about">探索成都 <span class="btn__arrow" aria-hidden="true">→</span></a>
+              <a class="btn btn--ghost" href="#film"><span class="btn__play" aria-hidden="true"><svg viewBox="0 0 10 12" fill="currentColor"><path d="M0 0l10 6-10 6z"/></svg></span>观看城市短片</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- 第二张：锦里灯火 -->
+        <article class="hero-slide hero-slide--lantern" data-slide data-caption="人间烟火三千年" aria-hidden="true">
+          <div class="hero-slide__bg" role="img" aria-label="锦里古街夜晚亮起的红灯笼"></div>
+          <div class="hero-slide__veil"></div>
+          <div class="container hero__content">
+            <p class="eyebrow eyebrow--light"><span class="eyebrow__line"></span>市井成都 · 人间烟火</p>
+            <h2 class="hero__title">人间烟火<br><em>三千年</em></h2>
+            <p class="hero__desc">一盏盖碗茶，一锅红油，一条亮到深夜的老街。成都的热闹，从来不喧哗，却足够滚烫。</p>
+            <div class="hero__actions">
+              <a class="btn btn--gold" href="food.html">寻味成都 <span class="btn__arrow" aria-hidden="true">→</span></a>
+              <a class="btn btn--ghost" href="culture.html"><span class="btn__play" aria-hidden="true"><svg viewBox="0 0 10 12" fill="currentColor"><path d="M0 0l10 6-10 6z"/></svg></span>走进蜀地文化</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- 第三张：熊猫基地 -->
+        <article class="hero-slide hero-slide--panda" data-slide data-caption="熊猫故乡 · 天府成都" aria-hidden="true">
+          <div class="hero-slide__bg" role="img" aria-label="成都大熊猫繁育研究基地里吃竹子的熊猫"></div>
+          <div class="hero-slide__veil"></div>
+          <div class="container hero__content">
+            <p class="eyebrow eyebrow--light"><span class="eyebrow__line"></span>熊猫故乡 · 创意之城</p>
+            <h2 class="hero__title">熊猫故乡<br><em>天府成都</em></h2>
+            <p class="hero__desc">从竹林里的滚圆身影，到街头的先锋创意，成都把可爱与松弛，写进了每一个日常。</p>
+            <div class="hero__actions">
+              <a class="btn btn--gold" href="sights.html">发现景点 <span class="btn__arrow" aria-hidden="true">→</span></a>
+              <a class="btn btn--ghost" href="travel.html"><span class="btn__play" aria-hidden="true"><svg viewBox="0 0 10 12" fill="currentColor"><path d="M0 0l10 6-10 6z"/></svg></span>规划一次旅行</a>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <!-- 右侧竖排坐标 -->
+      <div class="hero__rail" aria-hidden="true">
+        <span>CHENGDU · CHINA</span>
+        <i></i>
+        <span>30.67°N / 104.06°E</span>
+      </div>
+
+      <!-- 底部控制栏 -->
+      <div class="hero__bottom">
+        <div class="container hero__bottom-inner">
+          <div class="hero__counter"><span data-current>01</span><em>/ 03</em></div>
+          <p class="hero__caption" data-hero-caption>雪山下的公园城市</p>
+          <div class="hero__controls">
+            <button class="circle-btn" type="button" data-prev aria-label="上一张">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg>
+            </button>
+            <div class="hero__dots" role="tablist" aria-label="选择轮播图片">
+              <button class="hero__dot is-active" type="button" data-dot="0" role="tab" aria-selected="true" aria-label="第 1 张：雪山下的公园城市"><i></i></button>
+              <button class="hero__dot" type="button" data-dot="1" role="tab" aria-selected="false" aria-label="第 2 张：人间烟火三千年" tabindex="-1"><i></i></button>
+              <button class="hero__dot" type="button" data-dot="2" role="tab" aria-selected="false" aria-label="第 3 张：熊猫故乡天府成都" tabindex="-1"><i></i></button>
+            </div>
+            <button class="circle-btn" type="button" data-next aria-label="下一张">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg>
+            </button>
+          </div>
+          <a class="hero__scroll" href="#about"><span>向下探索</span><i></i></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== 城市映像：宣传视频 ==================== -->
+    <section class="section section--ink film" id="film">
+      <div class="film__glow" aria-hidden="true"></div>
+      <div class="container">
+        <div class="film__head">
+          <div>
+            <p class="eyebrow eyebrow--light"><span class="eyebrow__line"></span>城市映像 / CITY IN MOTION</p>
+            <h2>看见成都，<em>不止一面</em></h2>
+          </div>
+          <p>从雪山到街巷，从清晨的茶香到深夜的火锅。二十秒，跟随镜头，听见这座城市的呼吸。</p>
+        </div>
+
+        <div class="video-shell reveal" data-video>
+          <video id="promoVideo" poster="assets/images/video-poster.jpg" preload="metadata" playsinline loop muted>
+            <source src="assets/video/chengdu-promo.mp4" type="video/mp4">
+            您的浏览器暂不支持 HTML5 视频播放。
+          </video>
+
+          <button class="video-bigplay" type="button" data-video-bigplay aria-label="播放成都城市短片">
+            <span class="video-bigplay__circle" aria-hidden="true">
+              <svg viewBox="0 0 24 26" fill="currentColor"><path d="M1 1l22 12L1 25z"/></svg>
+            </span>
+            <span class="video-bigplay__label">播放城市短片</span>
+          </button>
+
+          <div class="video-ui">
+            <button class="video-btn" type="button" data-video-play aria-label="播放视频">
+              <svg class="icon-play" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>
+              <svg class="icon-pause" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M7 5h4v14H7zM13 5h4v14h-4z"/></svg>
+            </button>
+            <input class="video-range" type="range" min="0" max="100" value="0" step="0.1" data-video-seek aria-label="视频进度">
+            <span class="video-time"><span data-video-current>00:00</span> / <span data-video-duration>00:21</span></span>
+            <button class="video-btn" type="button" data-video-fullscreen aria-label="全屏播放">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M4 9V4h5M20 9V4h-5M4 15v5h5M20 15v5h-5"/></svg>
+            </button>
+          </div>
+        </div>
+
+        <div class="film__foot">
+          <span>成都城市宣传短片 · 00:21</span>
+          <span>SHOT IN CHENGDU · SICHUAN · CHINA</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== 关于成都：约 300 字介绍 ==================== -->
+    <section class="section section--paper" id="about">
+      <div class="container">
+        <div class="about__grid">
+          <figure class="about__figure reveal">
+            <div class="about__image">
+              <img src="assets/images/home-intro.jpg" alt="傍晚时分的成都宽窄巷子街景" loading="lazy" decoding="async">
+            </div>
+            <figcaption><span>01</span> 宽窄巷子 · 雨后的青石板</figcaption>
+          </figure>
+
+          <div class="about__body">
+            <p class="eyebrow reveal"><span class="eyebrow__line"></span>关于成都 / ABOUT CHENGDU</p>
+            <h2 class="reveal reveal--delay-1">一座来了，<br><em>就不想走</em>的城市</h2>
+
+            <div class="about__text reveal reveal--delay-2">
+              <p>成都，一座被雪山与烟火同时偏爱的城市。它地处四川盆地腹地，沃野千里、河网纵横，自古便有“天府之国”的美誉。两千三百余年的建城史，将古蜀文明、三国故事、诗歌风雅与市井生活层层叠印在街巷之间。天气晴好的清晨，雪山会从城市天际线尽头现身，薄雾与金光一同漫过屋檐。</p>
+              <p>清晨，人民公园的盖碗茶揭开一天的序幕；午后，宽窄巷子的青砖灰瓦藏着慢时光；入夜，火锅翻滚、川剧唱腔与锦江灯火一同升温。这里既有都江堰的千年智慧、青城山的清幽道韵，也有大熊猫的憨态可掬与街头巷尾的创意活力。街边小店、独立书店与年轻厂牌，让古老城市始终保持新鲜。</p>
+              <p>快与慢、古与今，在成都相处得恰到好处。它不急着向你证明什么，却总能在某个转角，让你卸下旅途的疲惫。无论为一口辣、一眼雪山，还是为一段慢时光而来，成都都会以自己的节奏接纳你。来一次成都，便懂得何为“来了就不想走”。</p>
+            </div>
+
+            <div class="about__signature reveal reveal--delay-3">
+              <strong>成都</strong>
+              <span>CHENGDU, SICHUAN<br>30.67°N · 104.06°E</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 城市数据 -->
+        <div class="stats reveal">
+          <div class="stat">
+            <strong>2300<sup>+</sup></strong>
+            <span>年建城史</span>
+          </div>
+          <div class="stat">
+            <strong>4500<sup>+</sup></strong>
+            <span>年古蜀文明</span>
+          </div>
+          <div class="stat">
+            <strong>2</strong>
+            <span>项世界遗产</span>
+          </div>
+          <div class="stat">
+            <strong>2100<sup>万+</sup></strong>
+            <span>常住人口</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== 城市切片：三条探索线索 ==================== -->
+    <section class="section section--sand">
+      <div class="container">
+        <div class="section-head section-head--split reveal">
+          <div>
+            <p class="eyebrow"><span class="eyebrow__line"></span>城市切片 / EXPLORE</p>
+            <h2>三条线索，<em>读懂成都</em></h2>
+          </div>
+          <p class="section-head__desc">从舌尖到山水，从街巷到戏台。成都的魅力，藏在热气腾腾的日常里，也藏在代代相传的手艺中。</p>
+        </div>
+
+        <div class="explore__grid">
+          <a class="explore-card reveal" href="food.html">
+            <img src="assets/images/food-hotpot.jpg" alt="成都红油火锅与新鲜食材" loading="lazy" decoding="async">
+            <span class="explore-card__veil"></span>
+            <div class="explore-card__content">
+              <span class="explore-card__num">01 / TASTE</span>
+              <span class="explore-card__en">麻辣鲜香 · 百菜百味</span>
+              <h3>食在成都</h3>
+              <span class="explore-card__desc">一口红油，一碗甜水，成都把生活煮得热气腾腾。</span>
+              <span class="explore-card__link">寻味成都 <span aria-hidden="true">→</span></span>
+            </div>
+          </a>
+
+          <a class="explore-card reveal reveal--delay-1" href="sights.html">
+            <img src="assets/images/sights-panda.jpg" alt="成都大熊猫繁育研究基地的熊猫" loading="lazy" decoding="async">
+            <span class="explore-card__veil"></span>
+            <div class="explore-card__content">
+              <span class="explore-card__num">02 / SIGHTS</span>
+              <span class="explore-card__en">山水之间 · 千年一瞬</span>
+              <h3>游在成都</h3>
+              <span class="explore-card__desc">从古堰青城到竹林熊猫，风景总在山水与人间之间。</span>
+              <span class="explore-card__link">发现景点 <span aria-hidden="true">→</span></span>
+            </div>
+          </a>
+
+          <a class="explore-card reveal reveal--delay-2" href="culture.html">
+            <img src="assets/images/culture-opera.jpg" alt="川剧变脸演员在舞台上亮相" loading="lazy" decoding="async">
+            <span class="explore-card__veil"></span>
+            <div class="explore-card__content">
+              <span class="explore-card__num">03 / CULTURE</span>
+              <span class="explore-card__en">一腔一调 · 一针一线</span>
+              <h3>品在成都</h3>
+              <span class="explore-card__desc">川剧的高腔、蜀绣的丝线，把蜀地风雅唱给世界听。</span>
+              <span class="explore-card__link">走进文化 <span aria-hidden="true">→</span></span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== 诗句中的成都 ==================== -->
+    <section class="section section--ink quote">
+      <div class="container quote__inner reveal">
+        <p class="eyebrow eyebrow--light"><span class="eyebrow__line"></span>诗中的成都 / A CITY IN POEMS</p>
+        <blockquote>“九天开出一成都，<br><em>万户千门入画图</em>。”</blockquote>
+        <cite>—— 李白《上皇西巡南京歌》</cite>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==================== 页脚 ==================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer__top">
+        <div class="footer__brand">
+          <a class="brand" href="index.html" aria-label="蜀韵·成都 首页">
+            <span class="brand__seal" aria-hidden="true">蜀</span>
+            <span class="brand__text">
+              <strong>蜀韵·成都</strong>
+              <small>SHUYUN CHENGDU</small>
+            </span>
+          </a>
+          <p class="footer__desc">雪山下的公园城市，烟火里的幸福成都。在这里，古老与年轻相处得恰到好处。</p>
+        </div>
+
+        <div class="footer__col">
+          <h4>页面导航</h4>
+          <a href="index.html">首页</a>
+          <a href="food.html">美食</a>
+          <a href="sights.html">景点</a>
+          <a href="culture.html">文化</a>
+          <a href="travel.html">攻略</a>
+        </div>
+
+        <div class="footer__col">
+          <h4>城市坐标</h4>
+          <p>中国 · 四川 · 成都</p>
+          <p class="is-mono">30.67°N / 104.06°E</p>
+          <p class="is-mono">ALTITUDE 500M</p>
+        </div>
+
+        <div class="footer__col">
+          <h4>关于本站</h4>
+          <p>成都文化旅游宣传网站</p>
+          <p>前端课程设计作品</p>
+          <p>图片素材仅用于学习交流</p>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <p>© <span data-year>2026</span> 蜀韵·成都 SHUYUN CHENGDU</p>
+        <p>雪山下的公园城市 · 烟火里的幸福成都</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- 返回顶部 -->
+  <button class="to-top" type="button" data-to-top aria-label="返回顶部">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M12 19V5M6 11l6-6 6 6"/></svg>
+  </button>
+</body>
+</html>

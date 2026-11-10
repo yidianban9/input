@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#16130f">
+  <meta name="description" content="食在成都：火锅、串串香、担担面、龙抄手与成都街头小吃，一文读懂天府之国的麻辣鲜香。">
+  <title>食在成都｜蜀韵·成都</title>
+
+  <link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="assets/images/food-hero.jpg" as="image">
+  <link rel="stylesheet" href="css/style.css">
+  <script>document.documentElement.classList.add("js");</script>
+  <script src="js/main.js" defer></script>
+</head>
+
+<body class="page page--food">
+  <a class="skip-link" href="#main">跳至主要内容</a>
+
+  <!-- ==================== 页头：与首页保持一致 ==================== -->
+  <header class="site-header" data-header>
+    <div class="container header__inner">
+      <a class="brand" href="index.html" aria-label="蜀韵·成都 首页">
+        <span class="brand__seal" aria-hidden="true">蜀</span>
+        <span class="brand__text">
+          <strong>蜀韵·成都</strong>
+          <small>SHUYUN CHENGDU</small>
+        </span>
+      </a>
+
+      <nav class="main-nav" aria-label="主导航">
+        <a class="nav-link" href="index.html"><span>01</span>首页</a>
+        <a class="nav-link is-active" href="food.html" aria-current="page"><span>02</span>美食</a>
+        <a class="nav-link" href="sights.html"><span>03</span>景点</a>
+        <a class="nav-link" href="culture.html"><span>04</span>文化</a>
+        <a class="nav-link" href="travel.html"><span>05</span>攻略</a>
+      </nav>
+
+      <div class="header__actions">
+        <a class="header__plan" href="travel.html">规划行程 <span aria-hidden="true">↗</span></a>
+        <button class="nav-toggle" type="button" aria-label="打开菜单" aria-expanded="false" aria-controls="mobileMenu" data-nav-toggle>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <div class="mobile-menu" id="mobileMenu" data-mobile-menu aria-hidden="true">
+    <div class="mobile-menu__inner">
+      <p class="mobile-menu__kicker">MENU · 蜀韵成都</p>
+      <nav class="mobile-menu__nav" aria-label="移动端导航">
+        <a class="mobile-menu__link" href="index.html"><span>01</span><strong>首页</strong><em>Home</em></a>
+        <a class="mobile-menu__link is-active" href="food.html"><span>02</span><strong>美食</strong><em>Food</em></a>
+        <a class="mobile-menu__link" href="sights.html"><span>03</span><strong>景点</strong><em>Sights</em></a>
+        <a class="mobile-menu__link" href="culture.html"><span>04</span><strong>文化</strong><em>Culture</em></a>
+        <a class="mobile-menu__link" href="travel.html"><span>05</span><strong>攻略</strong><em>Travel</em></a>
+      </nav>
+      <div class="mobile-menu__foot">
+        <p>雪山下的公园城市<br>烟火里的幸福成都</p>
+        <a class="text-link text-link--gold" href="travel.html">开始规划旅程 <span>→</span></a>
+      </div>
+    </div>
+  </div>
+
+  <main id="main">
+    <!-- ==================== 美食页页头 ==================== -->
+    <section class="page-hero page-hero--food">
+      <div class="page-hero__media" role="img" aria-label="成都红油火锅"></div>
+      <div class="page-hero__veil"></div>
+      <div class="container page-hero__inner">
+        <p class="eyebrow eyebrow--light"><span class="eyebrow__line"></span>01 / TASTE OF CHENGDU</p>
+        <h1>食在<em>成都</em></h1>
+        <p class="page-hero__lead">火锅翻滚的红油、担担面里的芝麻香、龙抄手的一口鲜——成都把“好吃”写成了一门生活哲学。</p>
+      </div>
+      <div class="page-hero__meta">
+        <div class="container">
+          <span>CHENGDU · SICHUAN</span>
+          <span class="page-hero__meta-line"></span>
+          <span>麻辣鲜香 · 百菜百味</span>
+        </div>
+      </div>
+      <div class="page-hero__num" aria-hidden="true">01</div>
+    </section>
+
+    <!-- ==================== 四大招牌味道 ==================== -->
+    <section class="section section--paper">
+      <div class="container">
+        <div class="section-head section-head--split reveal">
+          <div>
+            <p class="eyebrow"><span class="eyebrow__line"></span>成都味道 / TASTE</p>
+            <h2>一菜一格，<em>百菜百味</em></h2>
+          </div>
+          <p class="section-head__desc">川菜不止麻辣。二十四味型在成都的厨房里轮转，浓烈与清鲜各有讲究，热辣与温柔可以同桌。</p>
+        </div>
+
+        <div class="food-grid">
+          <!-- 火锅 -->
+          <article class="food-card reveal">
+            <div class="food-card__media">
+              <span class="food-card__num">01</span>
+              <img src="assets/images/food-hotpot.jpg" alt="成都红油火锅与毛肚、肥牛等配菜" loading="lazy" decoding="async">
+            </div>
+            <div class="food-card__body">
+              <p class="card-kicker">HOT POT · 麻辣</p>
+              <h3>成都火锅</h3>
+              <p>牛油与郫县豆瓣在铜锅里慢慢化开，毛肚七上八下，鸭肠一烫即起。成都人把团圆，煮进一锅红汤里。</p>
+              <div class="tag-row">
+                <span class="tag">牛油锅底</span>
+                <span class="tag">毛肚鸭肠</span>
+                <span class="tag">微辣到特辣</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- 串串香 -->
+          <article class="food-card reveal reveal--delay-1">
+            <div class="food-card__media">
+              <span class="food-card__num">02</span>
+              <img src="assets/images/food-chuanchuan.jpg" alt="成都串串香与红油锅底" loading="lazy" decoding="async">
+            </div>
+            <div class="food-card__body">
+              <p class="card-kicker">SKEWERS · 随性</p>
+              <h3>串串香</h3>
+              <p>竹签串起荤素，在红油里翻个身，再裹一层干碟。比火锅更随性，是街头巷尾最自在的深夜食堂。</p>
+              <div class="tag-row">
+                <span class="tag">按签计价</span>
+                <span class="tag">干碟油碟</span>
+                <span class="tag">夜宵首选</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- 担担面 -->
+          <article class="food-card reveal">
+            <div class="food-card__media">
+              <span class="food-card__num">03</span>
+              <img src="assets/images/food-dandan.jpg" alt="成都担担面" loading="lazy" decoding="async">
+            </div>
+            <div class="food-card__body">
+              <p class="card-kicker">DAN DAN NOODLES · 咸鲜</p>
+              <h3>担担面</h3>
+              <p>细面卧在红油与芝麻酱里，肉臊酥香，芽菜提味。拌匀的那一刻，麻辣鲜香一起涌上来。</p>
+              <div class="tag-row">
+                <span class="tag">芝麻酱</span>
+                <span class="tag">酥肉臊</span>
+                <span class="tag">碱水面</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- 龙抄手 -->
+          <article class="food-card reveal reveal--delay-1">
+            <div class="food-card__media">
+              <span class="food-card__num">04</span>
+              <img src="assets/images/food-longchao.jpg" alt="成都龙抄手" loading="lazy" decoding="async">
+            </div>
+            <div class="food-card__body">
+              <p class="card-kicker">WONTON · 鲜香</p>
+              <h3>龙抄手</h3>
+              <p>皮薄如纸，馅嫩多汁。清汤、红油、酸辣各有拥趸，一碗下肚，是成都人从小吃到大的温柔。</p>
+              <div class="tag-row">
+                <span class="tag">皮薄馅嫩</span>
+                <span class="tag">清汤红油</span>
+                <span class="tag">老字号</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== 风味密码 ==================== -->
+    <section class="section section--tight section--ink flavour-band">
+      <div class="container">
+        <div class="section-head section-head--split reveal">
+          <div>
+            <p class="eyebrow eyebrow--light"><span class="eyebrow__line"></span>风味密码 / FLAVOUR CODE</p>
+            <h2>成都味，<em>不止于辣</em></h2>
+          </div>
+          <p class="section-head__desc">麻、辣、鲜、香只是入口的第一层。真正让人惦记的，是复合味型里那一点回甘与余韵。</p>
+        </div>
+
+        <div class="flavour-band__grid reveal">
+          <div class="flavour">
+            <strong>麻</strong>
+            <span>汉源花椒的清香，在舌尖轻轻跳一下。</span>
+          </div>
+          <div class="flavour">
+            <strong>辣</strong>
+            <span>二荆条与朝天椒，辣得明亮，不遮本味。</span>
+          </div>
+          <div class="flavour">
+            <strong>鲜</strong>
+            <span>高汤、菌菇与时蔬，把鲜味慢慢吊出来。</span>
+          </div>
+          <div class="flavour">
+            <strong>香</strong>
+            <span>芝麻酱、花生碎与热油，香气层层叠叠。</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== 街头小吃清单 ==================== -->
+    <section class="section section--paper">
+      <div class="container">
+        <div class="section-head section-head--split reveal">
+          <div>
+            <p class="eyebrow"><span class="eyebrow__line"></span>街头小吃 / SNACKS</p>
+            <h2>边走边吃，<em>才是成都</em></h2>
+          </div>
+          <p class="section-head__desc">不必刻意找网红店。拐进一条老街，排队最长的那家，往往就是附近居民吃了很多年的味道。</p>
+        </div>
+
+        <div class="snack-grid">
+          <article class="snack reveal">
+            <span class="snack__num">01</span>
+            <h3>甜水面</h3>
+            <span class="snack__en">SWEET WATER NOODLES</span>
+            <p>粗面裹上红糖酱油，甜辣交织，嚼劲十足。</p>
+          </article>
+          <article class="snack reveal reveal--delay-1">
+            <span class="snack__num">02</span>
+            <h3>钟水饺</h3>
+            <span class="snack__en">ZHONG DUMPLINGS</span>
+            <p>红油微甜，蒜香收尾，一口一个刚刚好。</p>
+          </article>
+          <article class="snack reveal reveal--delay-2">
+            <span class="snack__num">03</span>
+            <h3>韩包子</h3>
+            <span class="snack__en">HAN BUNS</span>
+            <p>皮薄馅足，是老成都清晨的扎实记忆。</p>
+          </article>
+          <article class="snack reveal">
+            <span class="snack__num">04</span>
+            <h3>蛋烘糕</h3>
+            <span class="snack__en">DANHONGGAO</span>
+            <p>铜锅烘出金黄脆边，可甜可咸，现做现吃。</p>
+          </article>
+          <article class="snack reveal reveal--delay-1">
+            <span class="snack__num">05</span>
+            <h3>糖油果子</h3>
+            <span class="snack__en">SUGAR-OIL BALLS</span>
+            <p>外脆内糯，红糖与芝麻的街头甜香。</p>
+          </article>
+          <article class="snack reveal reveal--delay-2">
+            <span class="snack__num">06</span>
+            <h3>冰粉</h3>
+            <span class="snack__en">BING FEN</span>
+            <p>红糖、山楂与醪糟，是火锅之后的最佳收尾。</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== 茶馆：吃辣之后的慢时光 ==================== -->
+    <section class="section section--sand">
+      <div class="container feature-split">
+        <div class="feature-split__media reveal">
+          <img src="assets/images/culture-teahouse.jpg" alt="成都人民公园鹤鸣茶社" loading="lazy" decoding="async">
+        </div>
+        <div class="feature-split__body reveal reveal--delay-1">
+          <p class="eyebrow"><span class="eyebrow__line"></span>吃辣之后 / AFTER TEA</p>
+          <h2>去茶馆坐坐，<br>把时间<em>泡进盖碗里</em></h2>
+          <p>成都人吃火锅可以很快，喝茶却一定要慢。竹椅一靠，盖碗一揭，长嘴壶划出一道弧线，刚才的麻辣就被茶香慢慢熨平了。人民公园的鹤鸣茶社，是体验这份松弛感的好去处。</p>
+          <a class="text-link" href="culture.html">走进成都茶馆文化 <span aria-hidden="true">→</span></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== 页面收尾引导 ==================== -->
+    <section class="cta-band">
+      <div class="container cta-band__inner reveal">
+        <div>
+          <p class="eyebrow"><span class="eyebrow__line"></span>下一站 / NEXT</p>
+          <h2>吃饱喝足，<br>去看看成都的<em>山水与街巷</em>。</h2>
+        </div>
+        <a class="btn btn--gold" href="sights.html">发现成都景点 <span class="btn__arrow" aria-hidden="true">→</span></a>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==================== 页脚：与首页保持一致 ==================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer__top">
+        <div class="footer__brand">
+          <a class="brand" href="index.html" aria-label="蜀韵·成都 首页">
+            <span class="brand__seal" aria-hidden="true">蜀</span>
+            <span class="brand__text">
+              <strong>蜀韵·成都</strong>
+              <small>SHUYUN CHENGDU</small>
+            </span>
+          </a>
+          <p class="footer__desc">雪山下的公园城市，烟火里的幸福成都。在这里，古老与年轻相处得恰到好处。</p>
+        </div>
+
+        <div class="footer__col">
+          <h4>页面导航</h4>
+          <a href="index.html">首页</a>
+          <a href="food.html">美食</a>
+          <a href="sights.html">景点</a>
+          <a href="culture.html">文化</a>
+          <a href="travel.html">攻略</a>
+        </div>
+
+        <div class="footer__col">
+          <h4>城市坐标</h4>
+          <p>中国 · 四川 · 成都</p>
+          <p class="is-mono">30.67°N / 104.06°E</p>
+          <p class="is-mono">ALTITUDE 500M</p>
+        </div>
+
+        <div class="footer__col">
+          <h4>关于本站</h4>
+          <p>成都文化旅游宣传网站</p>
+          <p>前端课程设计作品</p>
+          <p>图片素材仅用于学习交流</p>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <p>© <span data-year>2026</span> 蜀韵·成都 SHUYUN CHENGDU</p>
+        <p>雪山下的公园城市 · 烟火里的幸福成都</p>
+      </div>
+    </div>
+  </footer>
+
+  <button class="to-top" type="button" data-to-top aria-label="返回顶部">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M12 19V5M6 11l6-6 6 6"/></svg>
+  </button>
+</body>
+</html>
