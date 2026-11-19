@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0d5c9e">
+  <meta name="description" content="科技工作者建言留言板——项目1 表单页面设计，采用 DIV 与表格混合布局。">
+  <title>留言板 · 科技工作者建言</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <div class="page-shell">
+    <!-- ==================== 页面头部：标题 + 栏目名 ==================== -->
+    <header class="board-header">
+      <div class="board-header__brand">
+        <span class="board-header__eyebrow">MESSAGE BOARD / 项目一</span>
+        <h1>留言板</h1>
+      </div>
+      <div class="board-header__title">
+        <strong>科技工作者建言</strong>
+        <span>SCI-TECH WORKERS' VOICE</span>
+      </div>
+    </header>
+
+    <main class="board-main">
+      <!-- ==================== 表单标题 ==================== -->
+      <div class="form-head">
+        <div>
+          <h2><span class="form-head__mark"></span>发表留言</h2>
+          <p>您的每一条建议，都会被认真阅读。</p>
+        </div>
+        <span class="form-head__note">带 <em>*</em> 为必填项</span>
+      </div>
+
+      <!-- ==================== 留言表单：DIV 外层 + 表格布局 ==================== -->
+      <form class="message-form" id="messageForm" action="#" method="post">
+        <table class="form-table">
+          <colgroup>
+            <col class="col-label">
+            <col>
+          </colgroup>
+          <tbody>
+            <tr>
+              <th scope="row"><label for="name">姓 名：<span class="required" aria-hidden="true">*</span></label></th>
+              <td>
+                <input class="input input--short" id="name" name="name" type="text" maxlength="20"
+                       autocomplete="name" placeholder="请输入您的姓名" required>
+              </td>
+            </tr>
+
+            <tr>
+              <th scope="row"><label for="email">电子邮件：<span class="required" aria-hidden="true">*</span></label></th>
+              <td>
+                <input class="input input--long" id="email" name="email" type="email"
+                       autocomplete="email" placeholder="name@example.com" required>
+              </td>
+            </tr>
+
+            <tr>
+              <th scope="row">分 类：</th>
+              <td>
+                <div class="category-row">
+                  <strong class="category-tag">科技工作者建言</strong>
+
+                  <label class="radio">
+                    <input type="radio" name="privacy" value="public" checked>
+                    <span>不保密</span>
+                  </label>
+                  <label class="radio">
+                    <input type="radio" name="privacy" value="private">
+                    <span>保密</span>
+                  </label>
+
+                  <div class="type-group">
+                    <label for="messageType">留言类型：</label>
+                    <select id="messageType" name="messageType" required>
+                      <option value="">请选择</option>
+                      <option value="suggestion">建言献策</option>
+                      <option value="question">问题咨询</option>
+                      <option value="cooperation">合作交流</option>
+                      <option value="other">其他</option>
+                    </select>
+                  </div>
+                </div>
+              </td>
+            </tr>
+
+            <tr>
+              <th scope="row"><label for="message">留 言：<span class="required" aria-hidden="true">*</span></label></th>
+              <td>
+                <div class="textarea-wrap">
+                  <textarea id="message" name="message" rows="6" maxlength="500"
+                            placeholder="请写下您的建议、意见或问题……" required></textarea>
+                  <span class="char-count"><span id="charCount">0</span> / 500</span>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+
+        <!-- 保密提示：原文照录 -->
+        <p class="privacy-note" id="privacyHelp"><strong>注：</strong>如果您的留言不便公开，请选择“保密”选项，提交后可凭系统反馈给您的留言编号、查询密码和您的姓名查询回复。</p>
+
+        <!-- 操作按钮 -->
+        <div class="form-actions">
+          <button class="btn btn--primary" type="submit">提交</button>
+          <button class="btn btn--ghost" type="reset">清空</button>
+        </div>
+      </form>
+
+      <!-- 提交成功后的演示反馈 -->
+      <section class="result" id="result" aria-live="polite" hidden>
+        <div class="result__icon" aria-hidden="true">✓</div>
+        <div class="result__body">
+          <h3>留言已提交</h3>
+          <p>感谢您的建言。请妥善保存以下信息，以便后续查询回复。</p>
+          <dl class="result__meta">
+            <div>
+              <dt>留言编号</dt>
+              <dd id="resultNo">—</dd>
+            </div>
+            <div>
+              <dt>查询密码</dt>
+              <dd id="resultPassword">—</dd>
+            </div>
+          </dl>
+          <p class="result__hint">本页面为表单设计实训演示，提交结果仅在当前页面显示，不会发送到服务器。</p>
+          <button class="btn btn--ghost btn--small" id="newMessage" type="button">继续留言</button>
+        </div>
+      </section>
+
+      <!-- ==================== 留言须知：原文照录 ==================== -->
+      <section class="board-rules" aria-labelledby="rulesTitle">
+        <h3 id="rulesTitle">留言须知</h3>
+        <ul>
+          <li>请遵守国家有关法律、法规，尊重网上道德，承担一切因您的行为而直接或间接引起的法律责任。</li>
+          <li>本网站拥有管理笔名和留言的一切权利。</li>
+        </ul>
+      </section>
+    </main>
+
+    <footer class="board-footer">
+      <span>项目1 · 表单页面设计实训</span>
+      <span>科技工作者建言留言板</span>
+    </footer>
+  </div>
+
+  <!-- 轻提示 -->
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
